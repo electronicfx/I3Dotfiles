@@ -23,12 +23,8 @@ $~~$
 xrandar --output Virtual-1 --mode 1920x1080
 ```
 
-$~~$
 
-> *By the way, this dotfiles is hard coded for dual monitors, so please edit ./profile (line 8-9) and ./.config/i3/config (line 126-135) before applying this dotfiles on other systems.*
 
-> Make sure ./.local/share/* is copied to ~/.local/share/
-> !! Use KDE System Settings to load my color scheme (iluv-sakura) and my icons (iluv-icons) for GTK and KDE apps
 
 $~~$
 
