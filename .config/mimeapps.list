@@ -1,0 +1,11 @@
+[Default Applications]
+inode/directory=xfce4-file-manager.desktop
+x-scheme-handler/trash=xfce4-file-manager.desktop
+
+[Added Associations]
+inode/directory=xfce4-file-manager.desktop;
+x-scheme-handler/trash=xfce4-file-manager.desktop;
+application/x-shellscript=nvim.desktop;
+text/plain=nvim.desktop;
+image/jpeg=org.xfce.ristretto.desktop;org.gnome.eog.desktop;lximage-qt.desktop;
+video/mp4=vlc.desktop;

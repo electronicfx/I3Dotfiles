@@ -1,0 +1,10 @@
+<!DOCTYPE patchbay>
+<patchbay name="pipe" version="0.7.7">
+ <items>
+  <item node-type="alsa" port-type="alsa-midi">
+   <output node="14:Midi Through" port="0:Midi Through Port-0"/>
+   <input node="14:Midi Through" port="0:Midi Through Port-0"/>
+  </item>
+ </items>
+</patchbay>
+

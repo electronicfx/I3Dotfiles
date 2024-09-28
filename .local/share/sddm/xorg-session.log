@@ -1,0 +1,35 @@
+/bin/sh: Zeile 1: xss-lock: Kommando nicht gefunden.
+/bin/sh: Zeile 1: nm-applet: Kommando nicht gefunden.
+/bin/sh: Zeile 1: dex: Kommando nicht gefunden.
+/home/arch/scripts/change_wallpaper.sh: Zeile 18: WALLPAPERS: Falscher Feldindex.
+picom doesn't accept positional arguments.
+feh WARNING: /home/arch/.wallpapers/sakura--rchannel-boosted--1920-1080.png does not exist - skipping
+feh WARNING: /home/arch/.wallpapers/rose--colden--1080-1920.png does not exist - skipping
+feh: No loadable images specified.
+See 'feh --help' or 'man feh' for detailed usage information
+Error: open /dev/tty: no such device or address
+polybar|notice:  Parsing config file: /home/arch/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 657)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+Failed to load cookie file from cookie: Permission denied
+feh WARNING: Can't write to /home/arch/.fehbg
+polybar|error: Disabling module "pulseaudio" (reason: Could not connect to pulseaudio server.)
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|error: Disabling module "wlan" (reason: No interface found for type 'wireless')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 5 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+[ 27.08.2024 21:01:57.679 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 399
+[ 27.08.2024 21:01:57.679 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 403
+[ 27.08.2024 21:02:06.733 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 1154
+W: [pulseaudio] core-util.c: Failed to open configuration file '/home/arch/.config/pulse//daemon.conf': Keine Berechtigung
+W: [pulseaudio] daemon-conf.c: Öffnen der Konfigurationsdatei fehlgeschlagen : Keine Berechtigung
+[0,161] Failed to load cached in main values with error: [Errno 13] Keine Berechtigung: '/home/arch/.cache/kitty/main.json'
+[ 27.08.2024 21:02:57.386 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 7400
+[ 27.08.2024 21:02:57.386 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 7404
+[2,376] [glfw error 65544]: process_desktop_settings: failed with error: [org.freedesktop.DBus.Error.ServiceUnknown] The name is not activatable
+[2,376] [glfw error 65544]: Notify: Failed to get server capabilities error: [org.freedesktop.DBus.Error.ServiceUnknown] The name is not activatable
