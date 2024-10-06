@@ -1,7 +1,7 @@
 # dotfiles i3 & SDDM
 
 ## I3 Dots: >> https://github.com/iluvgirlswithglasses/dotfiles/tree/main?tab=readme-ov-file
-## SDDM config >> https://github.com/vinayydv3695/.dotfiles/tree/main/Susu
+## SDDM config >> https://github.com/vinayydv3695/.dotfiles/ // https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/
 
 
 > start archinstall w/ i3, sddm,
