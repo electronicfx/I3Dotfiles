@@ -45,7 +45,7 @@ Column {
 
             id: selectUser
 
-            width: parent.height
+            width: parent.hight
             height: parent.height
             anchors.left: parent.left
 
