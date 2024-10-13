@@ -105,6 +105,23 @@ function yd
 end
 
 
+
+
+### save history
+
+# Setze den Pfad für die XDG_DATA_HOME, wenn du eine benutzerdefinierte Historie verwenden möchtest
+set -gx XDG_DATA_HOME ~/.local/share
+
+
+#function fish_prompt
+    # Speichern der Historie nach jedem Befehl
+#    history --save
+#    echo -n (prompt_pwd) ' > '
+#end
+
+history --merge
+
+
 #######################################################################
 #### ------------------------ mpv aliases ------------------------ ####
 #######################################################################
