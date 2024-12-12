@@ -37,6 +37,8 @@ exec --no-startup-id picom
 
 # start BG script on logon
 #exec --no-startup-id /home/arch/.config/scripts/change_wallpaper.sh 
+exec --no-startup-id /home/arch/scripts/mount_smb.sh
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -220,13 +222,19 @@ bar {
 # ------------------------------------------------------------------ #
 #                              services                              #
 # ------------------------------------------------------------------ #
-exec polybar bar1
+exec polybar bar1 
 #exec polybar bar2
 #exec polybar bar3
 #exec polybar bar4
 #exec polybar bar5
-#exec polybar bar6
+
+#exec_always killall polybar
+#exec_always --no-startup-id ~/.config/polybar/bar.sh
+
 #exec_always --no-startup-id sleep 1;/home/$USER/.config/polybar/launch.sh
+
+exec_always --no-startup-id setxkbmap -option caps:escape
+
 
 
 exec --no-startup-id pcloud
@@ -234,8 +242,6 @@ exec --no-startup-id pcloud
 exec_always feh --bg-scale ~/wallpaper/BG1.jpg
 
 #exec_always --no-startup-id ~/.config/
-
-exec_always feh --bg-scale ~/.wallpapers/sakura--rchannel-boosted--1920-1080.png --bg-scale ~/.wallpapers/rose--colden--1080-1920.png
 
 exec_always compton -f -I 0.080 -O 0.080 --vsync opengl
 
