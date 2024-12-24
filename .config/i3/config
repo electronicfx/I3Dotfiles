@@ -57,7 +57,7 @@ tiling_drag modifier titlebar
 # launchers
 bindsym $mod+Return exec kitty
 bindsym $mod+w exec firefox
-bindsym $mod+e exec thunar 
+bindsym $mod+e exec GTK_THEME=Sweet:dark thunar
 
 # bindsym $mod+e exec dolphin / nautilus 
 
