@@ -1,10 +1,10 @@
 # dotfiles i3 & SDDM
 
-### Based of these I3 Dots: >> https://github.com/iluvgirlswithglasses/dotfiles/tree/main?tab=readme-ov-file
-### SDDM config >> https://github.com/vinayydv3695/.dotfiles/ // https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/
+### [Based of these I3 Dots](https://github.com/iluvgirlswithglasses/dotfiles/tree/main?tab=readme-ov-file)
+### [SDDM config](https://github.com/vinayydv3695/.dotfiles/) // [gitlab](https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/)
 
-
-- [Start](#start-archinstall-i3-sddm)
+--------------------------------------
+- [Start](#archinstall-i3-sddm)
 - [Xrandar](#xrandar)
 - [yay](#yay-install)
 - [SDDM](#sddm)
@@ -14,7 +14,8 @@
 
 
 
-## start archinstall i3 sddm
+## archinstall i3 sddm
+Start with ```archinstall```, choose I3 as window manager and SDDM as greeter 
 ```
 sudo pacman -S feh picom firefox polybar pymol xf86-video-fbdev xorg xorg-xinit ttf-jetbrains-mono git kitty ranger rofi
 ```
@@ -28,7 +29,7 @@ sudo pacman -Sy fftw alsa-lib iniparser pulseaudio autoconf-archive pkgconf naut
 $~~$
 
 ## xrandar 
->xrandr -> "Virtual-1" unter screen0 bezeichnung des displays
+>xrandr -> ```Virtual-1``` underneath ```screen0``` name of the display
 ```
 xrandar --output Virtual-1 --mode 1920x1080
 ```
