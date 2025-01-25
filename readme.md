@@ -1,10 +1,20 @@
 # dotfiles i3 & SDDM
 
-## I3 Dots: >> https://github.com/iluvgirlswithglasses/dotfiles/tree/main?tab=readme-ov-file
-## SDDM config >> https://github.com/vinayydv3695/.dotfiles/ // https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/
+### Based of these I3 Dots: >> https://github.com/iluvgirlswithglasses/dotfiles/tree/main?tab=readme-ov-file
+### SDDM config >> https://github.com/vinayydv3695/.dotfiles/ // https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/
 
 
-> start archinstall w/ i3, sddm,
+- [Start](#start-archinstall-i3-sddm)
+- [Xrandar](#xrandar)
+- [yay](#yay-install)
+- [SDDM](#sddm)
+- [Colors BG Tag](#colors-bg-tag)
+- [Customization](#further-customization)
+
+
+
+
+## start archinstall i3 sddm
 ```
 sudo pacman -S feh picom firefox polybar pymol xf86-video-fbdev xorg xorg-xinit ttf-jetbrains-mono git kitty ranger rofi
 ```
@@ -66,7 +76,8 @@ sddm-greeter --test-mode --theme /usr/share/sddm/themes/sweet
 
 $~~$
 
-# Colors + BG + Tag
+## Colors BG Tag 
+
 ```
 bindsym $mod+1 exec --no-startup-id ~/scripts/change_cache_wallp.sh 1; workspace 1
 ```
