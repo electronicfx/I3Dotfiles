@@ -9,7 +9,7 @@
 sudo pacman -S feh picom firefox polybar pymol xf86-video-fbdev xorg xorg-xinit ttf-jetbrains-mono git kitty ranger rofi
 ```
 ```
-sudo pacman -S base-devel libx11 libxft libxinerama freetype2 fontconfig systemsettings xorg-xrandr fish
+sudo pacman -S base-devel libx11 libxft libxinerama freetype2 fontconfig systemsettings xorg-xrandr fish autotiling
 ```
 ```
 sudo pacman -Sy fftw alsa-lib iniparser pulseaudio autoconf-archive pkgconf nautilus thunar feh kitty neovim i3 rofi polybar xsel flameshot
