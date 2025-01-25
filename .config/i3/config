@@ -35,10 +35,9 @@ exec --no-startup-id nm-applet
 # start picom on login
 exec --no-startup-id picom
 
-# start BG script on logon
+# start script on logon
 #exec --no-startup-id /home/arch/.config/scripts/change_wallpaper.sh 
 exec --no-startup-id /home/arch/scripts/mount_smb.sh
-
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -54,16 +53,20 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# autotiling
+exec_always autotiling -w 1 3 5 7 9
+
+#layout 
+#workspace_layout splitv
+
 # launchers
 bindsym $mod+Return exec kitty
 bindsym $mod+w exec firefox
 bindsym $mod+e exec GTK_THEME=Sweet:dark thunar
-
-# bindsym $mod+e exec dolphin / nautilus 
+#bindsym $mod+e exec dolphin / nautilus 
 
 bindsym $mod+m exec spotify 
 bindsym $mod+Conrtol+l exec libreoffice
-##bindsym $mod+;; exec --no-startup-id kitty -e ;was in terminal;
 bindsym Print exec spectacle
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym Shift+Print exec --no-startup-id flameshot full
@@ -74,15 +77,12 @@ bindsym $mod+q kill
 # start rofi (a program launcher)
 bindsym $mod+r exec --no-startup-id rofi -no-lazy-grab -show drun
 
-#layout 
-#workspace_layout splitv
 
-
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+## A more modern dmenu replacement is rofi:
+## bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+## There also is i3-dmenu-desktop which only displays applications shipping a
+## .desktop file. It is a wrapper around dmenu, so you need that installed.
+## bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -134,6 +134,10 @@ bindsym $mod+a focus parent
 # focus the child container
 # bindsym $mod+d focus child
 
+# ------------------------------------------------------------------ #
+#                              workspace                              #
+# ------------------------------------------------------------------ #
+
 # switch to workspace
 #workspace_auto_back_and_forth yes
 bindsym $mod+1 exec --no-startup-id ~/scripts/change_cache_wallp.sh 1; workspace 1
@@ -141,7 +145,6 @@ bindsym $mod+2 exec --no-startup-id ~/scripts/change_cache_wallp.sh 2; workspace
 bindsym $mod+3 exec --no-startup-id ~/scripts/change_cache_wallp.sh 3; workspace 3
 bindsym $mod+4 exec --no-startup-id ~/scripts/change_cache_wallp.sh 4; workspace 4
 bindsym $mod+5 exec --no-startup-id ~/scripts/change_cache_wallp.sh 5; workspace 5
-
 
 #bindsym $mod+1 workspace 1; 
 #bindsym $mod+2 workspace 2; 
@@ -154,11 +157,13 @@ bindsym $mod+5 exec --no-startup-id ~/scripts/change_cache_wallp.sh 5; workspace
 #bindsym $mod+8 workspace 8;
 #bindsym $mod+9 workspace 9;
 #bindsym $mod+0 workspace 10;
+
 workspace 1 output HDMI-2
 workspace 2 output HDMI-2
 workspace 3 output HDMI-2
 workspace 4 output HDMI-2
 workspace 5 output HDMI-2
+
 #workspace 6 output DP-0
 #workspace 7 output DP-0
 #workspace 8 output HDMI-1
@@ -171,19 +176,25 @@ bindsym $mod+Shift+2 move container to workspace 2; workspace 2
 bindsym $mod+Shift+3 move container to workspace 3; workspace 3
 bindsym $mod+Shift+4 move container to workspace 4; workspace 4
 bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+
 #bindsym $mod+Shift+6 move container to workspace 6; workspace 6
 #bindsym $mod+Shift+7 move container to workspace 7; workspace 7
 #bindsym $mod+Shift+8 move container to workspace 8; workspace 8
 #bindsym $mod+Shift+9 move container to workspace 9; workspace 9
 #bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
+
+# ------------------------------------------------------------------ #
+#                              services                              #
+# ------------------------------------------------------------------ #
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-
 bindsym $mod+Shift+r exec "polybar-msg cmd restart"; restart
-# exit i3 (logs you out of your X session)
 
+# exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 #shutdown
@@ -218,10 +229,6 @@ bar {
     mode invisible
 }
 
-
-# ------------------------------------------------------------------ #
-#                              services                              #
-# ------------------------------------------------------------------ #
 exec polybar bar1 
 #exec polybar bar2
 #exec polybar bar3
@@ -239,6 +246,7 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 
 exec --no-startup-id pcloud
 
+### adjust with Real name of image
 exec_always feh --bg-scale ~/wallpaper/BG1.jpg
 
 #exec_always --no-startup-id ~/.config/
