@@ -33,11 +33,10 @@ $~~$
 ```
 xrandar --output Virtual-1 --mode 1920x1080
 ```
+$~$
 
+> [linutil](https://github.com/ChrisTitusTech/linutil)
 
-
-
-$~~$
 
 ## yay install
 
@@ -48,7 +47,7 @@ cd yay
 makepkg -si
 ```
 
-$~~$
+$~$
 
 ## sddm
 ```
