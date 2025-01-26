@@ -5,19 +5,19 @@ WALLPAPER_DIR="$HOME/wallpaper"
 
 # Hintergrundbilder für die Workspaces
 declare -A WALLPAPERS
-WALLPAPERS[1]="$WALLPAPER_DIR/BG1.jpg"
+WALLPAPERS[1]="$WALLPAPER_DIR/BG1.png"
 WALLPAPERS[2]="$WALLPAPER_DIR/BG2.jpg"
 WALLPAPERS[3]="$WALLPAPER_DIR/BG3.jpg"
 WALLPAPERS[4]="$WALLPAPER_DIR/BG4.jpg"
-WALLPAPERS[5]="$WALLPAPER_DIR/BG5.jpg"
+WALLPAPERS[5]="$WALLPAPER_DIR/BG5.png"
 
 # Liste der Hintergrundbilder (zum Vorladen)
 BACKGROUND_IMAGES=(
-    "$WALLPAPER_DIR/BG1.jpg"
+    "$WALLPAPER_DIR/BG1.png"
     "$WALLPAPER_DIR/BG2.jpg"
     "$WALLPAPER_DIR/BG3.jpg"
     "$WALLPAPER_DIR/BG4.jpg"
-    "$WALLPAPER_DIR/BG5.jpg"
+    "$WALLPAPER_DIR/BG5.png"
 )
 
 # Bilder vorladen, ohne den sichtbaren Hintergrund zu ändern
